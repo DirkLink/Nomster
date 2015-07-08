@@ -9,7 +9,10 @@ gem 'jquery-rails'
 gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
-gem 'httparty'
+gem 'figaro'
+gem 'faraday', '~> 0.9.1'
+gem 'faraday_middleware'
+gem 'simple_oauth', '~> 0.2', '>= 0.2.0', '< 0.3.0'
 
 group :development, :test do
   gem 'spring'
