@@ -8,6 +8,6 @@ class Business
     @review_count = api_data.fetch "review_count"
     @distance = api_data.fetch "distance"
     @rating = api_data.fetch "rating"
-    @address = api_data.fetch "location.address"
+    @address = api_data.fetch("location").fetch("address")
   end
-end
+end 

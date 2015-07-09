@@ -13,6 +13,8 @@ gem 'figaro'
 gem 'faraday', '~> 0.9.1'
 gem 'faraday_middleware'
 gem 'simple_oauth', '~> 0.2', '>= 0.2.0', '< 0.3.0'
+gem 'slim'
+gem "twitter-bootstrap-rails"
 
 group :development, :test do
   gem 'spring'

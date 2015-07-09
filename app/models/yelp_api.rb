@@ -12,7 +12,6 @@ class YelpApi
     
     s = @connection.get("v2/search?ll=#{lat},#{long}&limit=5&term=#{term}&sort=1")
     s = JSON.parse(s.body)
-    binding.pry
     bizzies = s["businesses"].map {|s| Business.new(s)}
   end
 end
