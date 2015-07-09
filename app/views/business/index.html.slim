@@ -5,7 +5,8 @@ table class="table table-striped table-hover"
   th Distance
   th Address
   th URL 
-  th Add to Favorites 
+  -if current_user
+    th Add to Favorites 
   - @restaurants.each do |r|
     tr 
       td class="name" = r.name 
@@ -14,6 +15,6 @@ table class="table table-striped table-hover"
       td class="distance" = r.distance 
       td class="address" = r.address.first 
       td class="url": a href="#{r.url}" Yelp Page 
-        
-      td
-        button.btn-small Favorite
+      -if current_user  
+        td
+          button.btn-small Favorite

@@ -1,0 +1,16 @@
+table class="table table-striped table-hover"
+  th Name
+  th Rating
+  th # of Reviews
+  th Address
+  th URL 
+  -@favorites.each do |f|
+    tr data-favorite-id="#{f.id}"
+      td = f.name
+      td = f.rating
+      td = f.review_count
+      td = f.address
+      td: a href="#{f.url}" Yelp Page 
+      td
+        button.btn.delete Delete
+  
